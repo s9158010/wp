@@ -5,6 +5,11 @@ class Complex {
   conj () { return new Complex(this.a, -1 * this.b) }
   add (c2) { return new Complex(this.a + c2.a, this.b + c2.b)    }
   sub (c2) { return new Complex(this.a - c2.a, this.b - c2.b)    }
+  /*                  a+bi
+                   *  c+di
+-------------------------------------
+              (ac-bd)+(ad+bc)i
+  */
   mul (c2) {
     var a=this.a, b=this.b, c=c2.a, d=c2.b
     return new Complex(a*c-b*d, a*d+b*c)
@@ -32,3 +37,6 @@ c.log(c1.toString())
 
 var c2 = c1.add(c1).mul(c1).div(c1)
 c.log(c2.toString())
+
+var c3 = c1.add(c1).mul(c1)
+c.log(c3.toString())
