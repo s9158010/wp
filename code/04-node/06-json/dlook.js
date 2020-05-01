@@ -4,6 +4,7 @@ function look (e) {
   return e2c[e]
 }
 
+console.log('process.argv=', process.argv)
 let e = process.argv[2] // 從 process.argv 這個陣列取出第二個元素
 let c = look(e)
 console.log(e + '=' + c)

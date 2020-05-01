@@ -1,4 +1,4 @@
-var e2c = { dog: '狗', cat: '貓', a: '一隻', chase: '追', eat: '吃' }
+var e2c = { dog: '狗', cat: '貓', a: '一隻', the: '這隻', chase: '追', eat: '吃' }
 
 function mt (e) {
   var c = []
@@ -10,5 +10,6 @@ function mt (e) {
   return c
 }
 
+console.log('process.argv.slice(2)=', process.argv.slice(2))
 var c = mt(process.argv.slice(2))
 console.log(c)
