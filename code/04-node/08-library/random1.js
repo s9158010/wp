@@ -13,3 +13,4 @@ var sample = function(array) {
 console.log("random(10,20)=", random(10,20));
 console.log("randomInt(10,20)=", randomInt(10,20));
 console.log("sample([a,b,c,d,e])=", sample(['a','b','c','d','e']));
+

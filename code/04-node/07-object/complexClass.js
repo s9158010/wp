@@ -12,6 +12,14 @@ class Complex {
     return new Complex(this.r - c2.r, this.i - c2.i)
   }
 
+  /*           1+2i
+             * 2+1i
+------------------------
+        r: 1*2-2*1 = 0
+        i: 1*1+2*2 = 5
+
+              0+5i
+  */
   mul (c2) {
     return new Complex(this.r * c2.r - this.i * c2.i,
                        this.r * c2.i + this.i * c2.r)
