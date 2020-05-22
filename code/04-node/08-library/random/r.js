@@ -1,15 +1,12 @@
-const r = {}
-
-r.random = function(a,b) { 
+export function random(a,b) { 
     return a+Math.random()*(b-a); 
 }
 
-r.randomInt = function(a,b) { 
-    return Math.floor(r.random(a,b)); 
+export function randomInt(a,b) { 
+    return Math.floor(random(a,b)); 
 }
 
-r.sample = function(array) { 
-    return array[r.randomInt(0,array.length)]; 
+export function sample(array) { 
+    return array[randomInt(0,array.length)]; 
 }
 
-module.exports = r

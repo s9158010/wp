@@ -5,5 +5,5 @@ function max(a,b) {
       return b;
 }
   
-m = max(9,5);
+var m = max(9,5);
 console.log("max(9,5)="+m);
