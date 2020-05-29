@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <body>
-<img id="ball" width="220" height="277" src="ball.jpg" alt="The Scream" style="display:none">
+<img id="ball" src="ball.jpg" alt="The Scream" style="">
 <p>Canvas:</p>
 <canvas id="myCanvas" width="240" height="297" style="border:1px solid #d3d3d3;"/>
 <script>
@@ -24,7 +24,7 @@ window.onload = function() {
   ctx.beginPath();
   ctx.strokeStyle = "black";
   ctx.lineWidth = 5; // 筆的寬度為 5px
-  ctx.arc(100,75,50,0,2*Math.PI);
+  ctx.arc(100,75,50,0,3/2*Math.PI);
   ctx.stroke();
 }
 </script>
